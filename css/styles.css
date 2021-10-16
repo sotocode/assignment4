@@ -6,4 +6,9 @@ Universal Styling
 
 body {
     background-color: hotpink;
+    background-image: url(../images/skyline.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: 100%;
 }
