@@ -12,3 +12,7 @@ body {
     background-position: bottom center;
     background-size: 100%;
 }
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+}
