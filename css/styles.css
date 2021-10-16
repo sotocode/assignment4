@@ -4,6 +4,11 @@ Universal Styling
 
 ----------------------------------*/
 
+@font-face {
+    font-family: 'altone';
+    src: url('../fonts/altone.ttf') format('truetype');
+}
+
 body {
     background-color: hotpink;
     background-image: url(../images/skyline.png);
@@ -15,4 +20,8 @@ body {
 
 h1 {
     font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    font-family: 'altone', sans-serif;
 }
