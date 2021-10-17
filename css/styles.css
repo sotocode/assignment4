@@ -10,18 +10,60 @@ Universal Styling
 }
 
 body {
-    background-color: hotpink;
-    background-image: url(../images/skyline.png);
+    background-image: url(../images/skyline.png), linear-gradient(0deg, hotpink, white);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom center;
     background-size: 100%;
 }
 
+section {
+    max-width: 800px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+section.box {
+    background: #ffffffdb;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px 50px;
+    border-style: solid;
+    border-color: pink;
+    border-width: 5px;
+    max-width: 390px;
+    text-align: center;
+}
+
 h1 {
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: pink;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    background-color: pink;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 p {
     font-family: 'altone', sans-serif;
+    font-size: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
