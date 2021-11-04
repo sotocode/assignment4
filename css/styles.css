@@ -119,9 +119,11 @@ p {
     width: 30%;
 }
 
-.slogan {
+footer {
     text-align: center;
-    background-color: rgba(255, 105, 180, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 30px;
 }
 
 .puppy-container {
@@ -156,7 +158,7 @@ p {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: hotpink;
+    background-color: rgba(255, 105, 180, 0.8);
   }
 
   .puppy-relative:hover .overlay {
