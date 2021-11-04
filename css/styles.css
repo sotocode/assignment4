@@ -26,6 +26,7 @@ body {
     background-attachment: fixed;
     background-position: bottom center;
     background-size: 100%;
+    margin-top: 120px;
 }
 
 .container {
@@ -35,13 +36,15 @@ body {
 
 header {
     background: black;
-    padding: 10px;
-    overflow: hidden;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header nav {
     float: right;
-    text-align: center;
+    margin-right: 20px;
 }
 
 header a {
@@ -55,23 +58,23 @@ header a:hover {
 
 header li {
     display: inline-block;
-    margin: 16px 20px;
+    padding: 12px 20px;
     font-family: 'altone', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 section {
     max-width: 800px;
     margin: auto;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 section.box {
     background: #ffffffdb;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 0px 50px;
+    padding: 0 50px;
     border-style: solid;
     border-color: pink;
     border-width: 5px;
@@ -83,7 +86,7 @@ section.box {
 h1 {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     color: pink;
 }
 
@@ -91,6 +94,7 @@ h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
     text-align: center;
+    margin: 15px 0;
 }
 
 h3 {
@@ -104,6 +108,7 @@ h3 {
 p {
     font-family: 'altone', sans-serif;
     font-size: 20px;
+    margin: 20px 0;
 }
 
 .center {
