@@ -4,6 +4,12 @@ Universal Styling
 
 ----------------------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 @font-face {
     font-family: 'altone';
     src: url('../fonts/altone.ttf') format('truetype');
@@ -15,6 +21,12 @@ body {
     background-attachment: fixed;
     background-position: bottom center;
     background-size: 100%;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 10px;
 }
 
 section {
