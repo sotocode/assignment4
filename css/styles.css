@@ -15,6 +15,11 @@ Universal Styling
     src: url('../fonts/altone.ttf') format('truetype');
 }
 
+h1, 
+nav {
+    display: inline-block;
+}
+
 body {
     background-image: url(../images/skyline.png), linear-gradient(0deg, hotpink, white);
     background-repeat: no-repeat;
@@ -23,10 +28,37 @@ body {
     background-size: 100%;
 }
 
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 header {
     background: black;
-    color: white;
     padding: 10px;
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: pink;
+}
+
+header li {
+    display: inline-block;
+    margin: 16px 20px;
+    font-family: 'altone', sans-serif;
+    font-size: 20px;
+    color: white;
 }
 
 section {
