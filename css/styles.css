@@ -40,6 +40,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 99;
 }
 
 header nav {
@@ -66,7 +67,7 @@ header li {
 
 section {
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -120,4 +121,44 @@ p {
 
 .slogan {
     text-align: center;
+    background-color: rgba(255, 105, 180, 0.3);
 }
+
+.puppy-container {
+    display: flex;
+    justify-content: center;
+}
+
+.puppy-relative {
+    position: relative;
+}
+
+.puppy-text {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hotpink;
+  }
+
+  .puppy-relative:hover .overlay {
+    opacity: 1;
+  }
