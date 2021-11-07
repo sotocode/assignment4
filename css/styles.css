@@ -21,13 +21,56 @@ nav {
 }
 
 body {
-    background-image: url(../images/skyline.png), linear-gradient(0deg, hotpink, white);
+    background-image: linear-gradient(0deg, hotpink, white);
+}
+
+main {
+    background-image: url(../images/skyline.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom center;
     background-size: 100%;
     margin-top: 120px;
+    overflow: hidden;
 }
+
+.fx {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.light1 {
+    z-index: 2;
+    top: 0;
+    margin: 0 auto;
+    animation: wind 4s infinite alternate;
+    animation-timing-function: ease-in-out;
+    display: block;
+    margin-bottom: -500px ;
+    position: relative;
+}
+
+@keyframes wind {
+    from {transform: rotate(45deg);}
+    to {transform: rotate(-45deg);}
+  }
+
+.light2 {
+    z-index: 1;
+    top: 0;
+    animation: winds 5s infinite alternate;
+    animation-timing-function: ease-in-out;
+    display: block;
+    margin-bottom: -500px ;
+    position: absolute;
+    opacity: .8;
+}
+
+@keyframes winds {
+    from {transform: rotate(-70deg);}
+    to {transform: rotate(70deg);}
+  }
 
 .container {
     max-width: 1920px;
@@ -75,7 +118,7 @@ section.box {
     background: #ffffffdb;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 0 50px;
+    padding: 0 40px;
     border-style: solid;
     border-color: pink;
     border-width: 5px;
@@ -90,6 +133,14 @@ h1 {
     font-size: 35px;
     color: pink;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+        padding-top: 5px;
+    }
+}
+
 
 h2 {
     font-family: 'Orbitron', sans-serif;
@@ -121,7 +172,7 @@ p {
 
 footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color:black;
     padding: 20px;
     margin-top: 30px;
 }
